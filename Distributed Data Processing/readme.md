@@ -45,7 +45,9 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 - El científico de datos construye soluciones con los datos y modelos obtenidos.
 
-### Los origenes de la ciencia de datos
+### Los orígenes de la ciencia de datos
+
+- La ciencia de datos de origina a partir de la necesidad de procesar grandes volúmenes de datos (Big Data). Por eso, en sus inicios se consideraba que la ciencia de datos y trabajar con big data era lo mismo.
 
 ![Untitled](resources/Untitled%202.png)
 
