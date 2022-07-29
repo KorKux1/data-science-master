@@ -83,7 +83,7 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 ### Crecimiento del Big Data
 
-- Tiene un crecimiento exponencial.
+- El Big Data tiene un crecimiento exponencial.
 
 ![Untitled](resources/Untitled%206.png)
 
@@ -91,7 +91,8 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 ![Untitled](resources/Untitled%208.png)
 
-- Hay que interiorizar las medidas de los datos.
+- Es importante interiorizar las medidas de los datos.
+- Entender las medidas de tamaño de los datos permite dar una idea de la magnitud del problema que se va a enfrentar.
 
 ![Untitled](resources/Untitled%209.png)
 
