@@ -478,7 +478,6 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 - Costos financieros.
 - Requiere un buen ancho de banda e internet.
 
-
 #### Pros
 
 ![Untitled](resources/Untitled%2051.png)
@@ -486,7 +485,7 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 - Disponibilidad de recursos instantáneo.
 - Escalabilidad horizontal.
 - Libre de mantenimiento del hardware.
-- No se necesita un equipo muy grande para manejar hardware, network e infraestructura
+- No se necesita un equipo muy grande para manejar hardware, networks e infraestructura.
 - Te deja concentrar en los objetivos de negocio
 
 ![Untitled](resources/Untitled%2052.png)
