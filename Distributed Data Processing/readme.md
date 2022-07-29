@@ -408,13 +408,13 @@ No se sabe que datos son importantes como para borrarlos.
 
 ![Untitled](resources/Untitled%2043.png)
 
-- Los equipos de hardware se vuelven absoletos.
-- Refrigeración.
-- Energía regulada e inenterrumpida.
+- Los equipos de hardware se vuelven obsoletos.
+- Hay que mantener la refrigeración.
+- Energía regulada e ininterrumpida.
 
-¿Comprar, Leasing o Rentar?
+Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 
-- Comprar y volverse obsoleto generará nuevos costos.
+- Comprar y volverse obsoleto generará nuevos costos para actualizar el hardware.
 
 ### Data Lake en la Cloud
 
