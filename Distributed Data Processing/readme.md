@@ -43,7 +43,14 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Tipos de escalamiento](#tipos-de-escalamiento)
     - [Infraestructura en el negocio](#infraestructura-en-el-negocio)
     - [Data Lake en la Cloud](#data-lake-en-la-cloud)
+      - [¿Qué clase de Soporte se necesita?](#qué-clase-de-soporte-se-necesita)
+        - [IaaS](#iaas)
+        - [PaaS](#paas)
+        - [SaaS](#saas)
     - [Retos, Pros y Contras de Cloud](#retos-pros-y-contras-de-cloud)
+      - [Retos](#retos)
+      - [Cons](#cons)
+      - [Pros](#pros)
     - [Como construir un Data Lake](#como-construir-un-data-lake)
     - [📌 RESUMEN](#-resumen-1)
 
@@ -428,26 +435,30 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 
 ![Untitled](resources/Untitled%2045.png)
 
-¿Qué clase de Soporte se necesita?
+#### ¿Qué clase de Soporte se necesita?
 
 ![Untitled](resources/Untitled%2046.png)
 
-- IaaS:
-  - Soluciona el problema de obsolescencia.
+##### IaaS
+
+- Soluciona el problema de:
+  - obsolescencia.
   - Refrigeración.
   - Mantenimiento.
-  - Ofrece la infraestructura.
+- Ofrece la infraestructura.
 
-    ![Untitled](resources/Untitled%2047.png)
+![Untitled](resources/Untitled%2047.png)
 
-- PaaS:
-  - Se tiene todos los servicios genéricos listos para usarlos.
-  - Ya tiene listo sistemas operativos y todo.
+##### PaaS
 
-    ![Untitled](resources/Untitled%2048.png)
+- Se tiene todos los servicios genéricos listos para usarlos.
+- Ya tiene listo sistemas operativos y todo.
 
-- SaaS:
-  - Dejan toda la infraestructura y plataforma montada lista para su uso.
+![Untitled](resources/Untitled%2048.png)
+
+##### SaaS
+
+- Dejan toda la infraestructura y plataforma montada lista para su uso.
 
 ![Untitled](resources/Untitled%2049.png)
 
@@ -455,19 +466,20 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 
 ![Untitled](resources/Untitled%2050.png)
 
-Retos:
+#### Retos
 
 - Aspectos legales que datos pueden estar o no fuera del país.
 - Complejidad de los stack de software distribuido.
 - Dependencias, upgrades y compatibilidad.
 
-Cons:
+#### Cons
 
 - Estimar los recursos que se van a necesitar en la nube.
 - Costos financieros.
 - Requiere un buen ancho de banda e internet.
 
-Pros:
+
+#### Pros
 
 ![Untitled](resources/Untitled%2051.png)
 
