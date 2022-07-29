@@ -22,6 +22,25 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Crecimiento del Big Data](#crecimiento-del-big-data)
     - [Las 4 V de IBM para el Big Data](#las-4-v-de-ibm-para-el-big-data)
     - [📌 RESUMEN](#-resumen)
+  - [Big Data](#big-data)
+    - [Para Recordar](#para-recordar-1)
+    - [Palabras Claves](#palabras-claves-1)
+    - [**Preguntas Importantes**](#preguntas-importantes-1)
+    - [Implicaciones del Big Data](#implicaciones-del-big-data)
+    - [Ciencia de Datos](#ciencia-de-datos)
+    - [¿La nube nos soluciona los retos de big data?](#la-nube-nos-soluciona-los-retos-de-big-data)
+    - [¿Cual es la infraestructura para hacer procesamiento distribuido de big data?](#cual-es-la-infraestructura-para-hacer-procesamiento-distribuido-de-big-data)
+    - [On Premise o Cloud](#on-premise-o-cloud)
+    - [Tipos de escalamiento](#tipos-de-escalamiento)
+    - [Infraestructura en el negocio](#infraestructura-en-el-negocio)
+    - [Data Lake en la Cloud](#data-lake-en-la-cloud)
+    - [Retos, Pros y Contras de Cloud](#retos-pros-y-contras-de-cloud)
+    - [Como construir un Data Lake](#como-construir-un-data-lake)
+  - [Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red](#del-pc-al-datalake-operación-básica-de-gnulinux-y-configuración-de-red)
+    - [**Para Recordar**](#para-recordar-2)
+    - [**Palabras Claves**](#palabras-claves-2)
+    - [**Preguntas Importantes**](#preguntas-importantes-2)
+    - [Notas](#notas-1)
 
 ## Introducción al Big Data
 
@@ -169,3 +188,325 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 - El crecimiento del Big Data es exponencial.
 - Como científicos de datos debemos tener un dominio de expertise.
 - Como científicos de datos debemos entender todo lo relacionado con los datos, desde sus fundamentos.
+
+## Big Data
+
+### Para Recordar
+
+### Palabras Claves
+
+### **Preguntas Importantes**
+
+### Implicaciones del Big Data
+
+![Untitled](resources/Untitled%2017.png)
+
+- Esta es la cantidad de datos que genera dos motores de los vuelos de un Boeing 737.
+Si se quiere hacer análisis de estos motores para saber cuando hacer el mantenimiento ¿Cómo se le daría manejo a esta cantidad de datos?
+
+- Si se quiere  trabajar con estos datos toca resolver los problemas de:
+  - Adquisición de los datos
+  - Almacenamiento de los datos.
+  - Recuperación: Estos datos se generan muy rápido ¿Cómo se se le da manejo?
+  - ¿Cómo se distribuye esta información?
+  - ¿Cómo se procesa?
+
+![Untitled](resources/Untitled%2018.png)
+
+- Algunas preguntas que surgen al manejar big data:
+
+![Untitled](resources/Untitled%2019.png)
+
+- ¿Qué otras variables afectan a los datos que estamos almacenando y que no los estamos contemplado?
+  Por ejemplo: los datos recogidos por los sensores están capturando bien los datos? el clima, la temperatura, la humedad o cualquier otro factor los puede estar afectando y estos factores que pueden afectar nuestros datos lo estamos contemplando?
+  Son preguntas que tenemos que realizarnos al trabajar con Big Data.
+
+### Ciencia de Datos
+
+- La ciencia de datos surge a partir de la big data.
+
+![Untitled](resources/Untitled%2020.png)
+
+- Definitivamente no se deben borrar los datos.
+No sabemos que datos son importantes como para borrarlos.
+- Hacer procesamiento secuencial de big data puede ser muy demorado, normalmente es mejor usar procesamiento distribuido.
+
+### ¿La nube nos soluciona los retos de big data?
+
+- No en todos los casos.
+- Por si solo usar una maquina cloud con grandes recursos para trabajar en Big Data no en todos los casos nos funciona.
+
+![Untitled](resources/Untitled%2021.png)
+
+![Untitled](resources/Untitled%2022.png)
+
+- Con Big Data hablamos de problemas grandes:
+
+3 Dimensiones:
+
+![Untitled](resources/Untitled%2023.png)
+
+Hay muchos problemas ¿Y las soluciones?
+
+- Para las soluciones nos remontamos hasta el tema de los BI.
+- Los data warehouse para algunas organizaciones sigue siendo muy bueno.
+  - A pesar de que los data warehouse son antiguos aún son validos para varios casos de análitica.
+
+![Untitled](resources/Untitled%2024.png)
+
+- Los datos pueden estar en varias fuentes, pero los centralizamos para el uso de todos.
+- Aunque ya en teoría se tenía soluciones tecnologías el big data crea problemas de estrategia y arquitectura.
+- Se plantea los data swarmp para almacenar datos.
+
+![Untitled](resources/Untitled%2025.png)
+
+- Una evolución de los data swamp son los data lake donde se busca tener los datos más organizados que un data swarm y que nos permita más opciones.
+
+![Untitled](resources/Untitled%2026.png)
+
+- Los datos tenemos que tenerlos de una forma odenada (La gobernanza de los datos).
+Todos deben seguir la gobernanza de los datos para que se pueda sacar el máximo provecho de los datos.
+
+![Untitled](resources/Untitled%2027.png)
+
+- Como ya con un solo computador no podemos procesar los datos, necesitamos distribuir.
+- Distribuyendo apoyamos:
+  - En la escalabilidad y rendimiento de los sistemas.
+  - Tolerencia a fallas.
+    Si un computador falla durante el procesamiento no perdemos todo el trabajo realizado.
+  - Variedad de los formatos.
+  - Muchas aplicaciones.
+  - Agrega valor.
+- La mejor solución que tenemos por ahora para estos problemas son los data lake: Distribución de datos y distribución de procesamiento.
+
+### ¿Cual es la infraestructura para hacer procesamiento distribuido de big data?
+
+Tres cosas claves: Hadward, software y conceptos básicos de redes.
+
+- Hardware Infraestructura:
+  - **Clusters. 7:30**
+    - Se arma con los racks
+  - Racks: Unidad de organización.
+    Puede tener elementos de procesamiento o almacenamiento.
+    Los elementos deben estar interconectados para que trabajen juntos.
+    - Se debe escoger con cuidado las unidades de procesamiento y almacenamiento.
+
+        ![Untitled](resources/Untitled%2028.png)
+
+    - KVM: Comparte el mouse, teclado y pantalla que puede manejar una unidad de rack. Solo 1 a la vez.
+    - Se accede de forma remotamente desde otro computador.
+
+        ![Untitled](resources/Untitled%2029.png)
+
+  - Debe ordenarse los clables para poder identificarlo. (Ingenieros telematicos o ingenieros de red). Esto no puede ser un desorden
+  - Its components.
+
+![Untitled](resources/Untitled%2030.png)
+
+- Nodos de procesamiento:
+  - Se debe controlar el calor.
+
+    ![Untitled](resources/Untitled%2031.png)
+
+  - Tiene dos interfaces de red para tener tolerancia de fallos.
+- Elementos de red:
+
+![Untitled](resources/Untitled%2032.png)
+
+Red de computadores:
+
+![Untitled](resources/Untitled%2033.png)
+
+Almacenamiento:
+
+La jerarquía de memoria.
+
+![Untitled](resources/Untitled%2034.png)
+
+El Nivel 5:
+
+![Untitled](resources/Untitled%2035.png)
+
+![Untitled](resources/Untitled%2036.png)
+
+- Las latencias normalmente se miden por tipo de operación (escritura, actualizar, borrado, lectura)
+- Hay que combinar el gobierno de datos con la arquitectura de datos. El gobierno por si solo no es suficiente.
+
+DAS:
+
+![Untitled](resources/Untitled%2037.png)
+
+- DAS (Direct Attached Storage): Caja de almacenamiento, no permite compartir datos con otros computadores.
+- Se puede acceder a los datos de un DAS desde otros computadores a partir de la red y un software. Sin embargo, al conectar muchos computadores (4) de esta forma el rendimiento se viene al piso.
+- El DAS sirve para empezar.
+- Para organizaciones que el nivel de madurez es muy bajo.
+
+NAS:
+
+![Untitled](resources/Untitled%2038.png)
+
+- Si la empresa tiene un nivel de madurez más alto. Donde varios equipos tienen que acceder a los datos es mejor empezar por un NAS.
+- Pensado para el uso concurrente por parte de diferentes equipos.
+- Apróximadamente  hasta 15 personas haciendo tareas de analitica de forma concurrente.
+- No se conecta directamente a un computaor.
+- Solución para los problemas intermedios.
+
+SAN:
+
+- Cuando los requerimientos sobrepasan las capacidades de un NAS, se pasa al SAN.
+- Para procesamiento de datos más complejo.
+
+![Untitled](resources/Untitled%2039.png)
+
+- Se agrega una red solo para el almacenamiento de datos.
+
+![Untitled](resources/Untitled%2040.png)
+
+- Normalmente los servidores de procesamiento se deben conectar al switch de Fibra.
+- Los cientificos de datos, correrían los modelos sobre los servidores.
+
+![Untitled](resources/Untitled%2041.png)
+
+### On Premise o Cloud
+
+- Balance entre on premise y la nube.
+- Empezar on premise, ahí se mirar la nube.
+- La nube es costosa y requiere buen canal de subida y bajada.
+- Si no se tiene experencia es mejor empezar on premise, dominando la tecnologia en sitio.
+- Se interactura de la misma forma on premise o Cloud.
+- Por detrás On Premise y Cloud funcionan igual.
+
+### Tipos de escalamiento
+
+![Untitled](resources/Untitled%2042.png)
+
+- Escalamiento Vertical: Scale Up
+  - Tiene un limite
+  - Se da según las necesidades de procesamiento y almacenamiento que se requieran.
+  - Es costoso
+  - Tiene mejor performance.
+  - Costo de mantenimiento es caro.
+  - Cuellos de botella
+    - Al estar conectado a un switch para obtener los datos, los procesadores internos tienen que coordinarse para procesar los datos.
+  - Limitado por la capavidad del servidor.
+- Escalamiento horizontal: Scale out
+  - Es mejor comprar varios computadores pequeños.
+  - Genera más problemas para ciertas técnicas y modelos.
+  - Operaciones más lentas.
+  - Costo de transportar datos en la red (Tiempo).
+  - Facil y flexible.
+  - Relaticamente barato.
+
+### Infraestructura en el negocio
+
+![Untitled](resources/Untitled%2043.png)
+
+- Los equipos de hardware se vuelven absoletos.
+- Refrigeración.
+- Energía regulada e inenterrumpida.
+
+¿Comprar, Leasing o Rentar?
+
+- Comprar y volverse obsoleto generará nuevos costos.
+
+### Data Lake en la Cloud
+
+![Untitled](resources/Untitled%2044.png)
+
+- Temas legales. Dependiendo de los datos que pueden estar o no dentro del país.
+- Buena conexión a internet y confiable.
+- Almacenamiento de datos cobro 24-7.
+- Se trata de arrendamiento de equipos sobre internet.
+- Pago por demanda.
+
+![Untitled](resources/Untitled%2045.png)
+
+¿Qué clase de Soporte se necesita?
+
+![Untitled](resources/Untitled%2046.png)
+
+- IaaS:
+  - Soluciona el problema de obselecencia.
+  - Refrigeración.
+  - Mantenimiento.
+  - Ofrece la infraestructura.
+
+    ![Untitled](resources/Untitled%2047.png)
+
+- PaaS:
+  - Se tiene todos los servicios genericos listos para usarlos.
+  - Ya tiene listo sistemas operativos y todo.
+
+    ![Untitled](resources/Untitled%2048.png)
+
+- SaaS:
+  - Dejan toda la infraestructura y plataforma montada lista para su uso.
+
+![Untitled](resources/Untitled%2049.png)
+
+### Retos, Pros y Contras de Cloud
+
+![Untitled](resources/Untitled%2050.png)
+
+Retos:
+
+- Aspectos legales que datos pueden estar o no fuera del país.
+- Complejidad de los stack de software distribuido.
+- Dependencias, upgrades y compatibilidad.
+
+Cons:
+
+- Estimar los recursos que se van a necesitar en la nube.
+- Costos financieros.
+- Requiere un buen ancho de banda e internet.
+
+Pros:
+
+![Untitled](resources/Untitled%2051.png)
+
+- Disponibilidad de recursos instantaneo.
+- Escalabilidad horizontal.
+- Libre de mantenimiento del hardware.
+- No se necesita un equipo muy grande para manejar hardware, network e infraestructura
+- Te deja concentrar en los objetivos de negocio
+
+![Untitled](resources/Untitled%2052.png)
+
+### Como construir un Data Lake
+
+- Primero hay que planear
+- Pensar en el modelo que mejor encaja en las necesidades de la organización a largo plazo.
+- Se construye pensando en su contexto más grande.
+- Se debe construir pensando no solo en el data lake sino en todo lo que se va a construir alrededor del data lake.
+- Se debe tener el contexto de la organización.
+
+![Untitled](resources/Untitled%2053.png)
+
+<aside>
+📌 **RESUMEN**:
+
+</aside>
+
+## Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red
+
+### **Para Recordar**
+
+### **Palabras Claves**
+
+### **Preguntas Importantes**
+
+### Notas
+
+- El computador es la herramienta básica de los cientificos de datos.
+- 3 Formas para usar el PC para mainupular datos.
+  - De forma Individual
+  - Indivudual-virtualizada: Cuando se desarrolla parte de la tarea, se escala al cluster.
+  - Parte de un cluster.
+- Verificar instalación de herramientas
+
+![Untitled](resources/Untitled%2054.png)
+
+<aside>
+📌 **RESUMEN**:
+
+</aside>
