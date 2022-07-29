@@ -61,13 +61,14 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 - Analiza los datos.
 - Mantiene conversaciones fluidas con los datos.
 
-### Habilidades del cientifico de datos.
+### Habilidades del científico de datos
 
-- Es importante que el cientifico de datos tenga un dominio de experticie (El área de negocio con el que va a trabajar, es necesario conocerla).
+- Es importante que el científico de datos tenga un dominio de expertise (El área de negocio con el que va a trabajar, es necesario conocerla).
+- Conocer sobre el negocio es un gran diferencial para el científico de datos.
 
 ![Untitled](resources/Untitled%203.png)
 
-¿Qué ocurre en internet en un minuto?
+### Big Data: ¿Qué ocurre en internet en un minuto?
 
 ![Untitled](resources/Untitled%204.png)
 
