@@ -2,18 +2,39 @@
 
 Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura).
 
+## Contenido
+
+- [Introducción al Procesamiento Distribuido de Datos](#introducción-al-procesamiento-distribuido-de-datos)
+  - [Contenido](#contenido)
+  - [Introducción al Big Data](#introducción-al-big-data)
+    - [Para Recordar](#para-recordar)
+    - [Palabras Claves](#palabras-claves)
+    - [Preguntas Importantes](#preguntas-importantes)
+    - [Notas](#notas)
+    - [¿Qué es el Big Data?](#qué-es-el-big-data)
+    - [Símil entre la química y la ciencia de datos](#símil-entre-la-química-y-la-ciencia-de-datos)
+    - [¿Qué es la ciencia de datos y el científico de datos?](#qué-es-la-ciencia-de-datos-y-el-científico-de-datos)
+    - [Los orígenes de la ciencia de datos](#los-orígenes-de-la-ciencia-de-datos)
+    - [¿Qué hace un científico de datos como un profesional?](#qué-hace-un-científico-de-datos-como-un-profesional)
+    - [Habilidades del científico de datos](#habilidades-del-científico-de-datos)
+    - [Big Data: ¿Qué ocurre en internet en un minuto?](#big-data-qué-ocurre-en-internet-en-un-minuto)
+    - [El ciclo de vida del Big Data](#el-ciclo-de-vida-del-big-data)
+    - [Crecimiento del Big Data](#crecimiento-del-big-data)
+    - [Las 4 V de IBM para el Big Data](#las-4-v-de-ibm-para-el-big-data)
+    - [📌 RESUMEN](#-resumen)
+
 ## Introducción al Big Data
 
-### **Para Recordar**
+### Para Recordar
 
 - Leer [Data Scientist the sexiest job of the 21st century](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century&ab=Article-Links-End_of_Page_Recirculation)
 
-### **Palabras Claves**
+### Palabras Claves
 
 - **Big Data:** Campo de estudio que trata de extraer valor de grandes volúmenes de datos, tanto estructurados como no estructurados.
 Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
-### **Preguntas Importantes**
+### Preguntas Importantes
 
 ### Notas
 
