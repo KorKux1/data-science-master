@@ -72,14 +72,14 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 ![Untitled](resources/Untitled%204.png)
 
-### El ciclo de vida del Big Data.
+### El ciclo de vida del Big Data
 
 ![Untitled](resources/Untitled%205.png)
 
-- Ingesta de datos: Almacenamiento
-- Hay que ponerlo en acción
+- La ingesta de datos trata sobre la obtención y almacenamiento de los datos.
+- Al finalizar el ciclo de vida del big data, los modelos y resultados que se alcancen hay que ponerlos en acción. Es decir, tomar decisiones con base en los resultados obtenidos.
 - Hay que asegurarse que los datos pueden ser explotables en la posteridad.
-    - Alguien sacó los datos del clima desde 1899. Que ahora se usan para predecir el clima y ver la evolución del calentamiento global.
+  Por ejemplo: Debido a que alguien sacó los datos del clima desde 1899, hoy se usan esos datos para predecir el clima y ver la evolución del calentamiento global.
 
 ### Crecimiento del Big Data
 
@@ -136,10 +136,9 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 - Valor (Quinta):
     - Habilita la posibilidad de obtener valor a traves de la análitica.
 
-<aside>
-📌 **RESUMEN**:
 
-</aside>
+### 📌 RESUMEN
+
 
 ## Big Data
 
