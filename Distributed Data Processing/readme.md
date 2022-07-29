@@ -51,15 +51,15 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 ![Untitled](resources/Untitled%202.png)
 
-### ¿Qué hace un cientifico de datos como un profesional?
+### ¿Qué hace un científico de datos como un profesional?
 
-- Hacer descubrimientos mientras se nada en los datos.
-- Encontrar los fenomenos apartir de los datos.
-    - ¿Cómo hacemos que el fenomeno ocurra más fuerte? ¿Cómo le sacamos más provecho?
+- Realiza descubrimientos mientras se nada en los datos.
+- Encuentra fenómenos a partir de los datos.
+  - Resuelve interrogantes como: ¿Cómo hacemos que el fenómeno ocurra más fuerte? ¿Cómo le sacamos más provecho?
 - Es capaz de estructurar datos
-- Encontrar estructura de datos.
-- Analizar los datos.
-- Puede mantener conversaciones fluidas con los datos.
+- Encuentra estructuras en los datos.
+- Analiza los datos.
+- Mantiene conversaciones fluidas con los datos.
 
 ### Habilidades del cientifico de datos.
 
