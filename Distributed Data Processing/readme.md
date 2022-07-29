@@ -25,12 +25,20 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
   - [Big Data](#big-data)
     - [Para Recordar](#para-recordar-1)
     - [Palabras Claves](#palabras-claves-1)
-    - [**Preguntas Importantes**](#preguntas-importantes-1)
+    - [Preguntas Importantes](#preguntas-importantes-1)
     - [Implicaciones del Big Data](#implicaciones-del-big-data)
     - [Ciencia de Datos y Big Data](#ciencia-de-datos-y-big-data)
     - [¿La nube nos soluciona los retos de big data?](#la-nube-nos-soluciona-los-retos-de-big-data)
     - [3 Dimensiones cuando hablamos de problemas de Big Data](#3-dimensiones-cuando-hablamos-de-problemas-de-big-data)
     - [¿Cual es la infraestructura para hacer procesamiento distribuido de big data?](#cual-es-la-infraestructura-para-hacer-procesamiento-distribuido-de-big-data)
+      - [Hardware e Infraestructura](#hardware-e-infraestructura)
+      - [Elementos de red](#elementos-de-red)
+      - [Red de computadores](#red-de-computadores)
+      - [Almacenamiento](#almacenamiento)
+        - [La jerarquía de memoria](#la-jerarquía-de-memoria)
+        - [DAS](#das)
+        - [NAS](#nas)
+        - [SAN](#san)
     - [On Premise o Cloud](#on-premise-o-cloud)
     - [Tipos de escalamiento](#tipos-de-escalamiento)
     - [Infraestructura en el negocio](#infraestructura-en-el-negocio)
@@ -196,7 +204,7 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 ### Palabras Claves
 
-### **Preguntas Importantes**
+### Preguntas Importantes
 
 ### Implicaciones del Big Data
 
@@ -281,77 +289,80 @@ No se sabe que datos son importantes como para borrarlos.
 
 ### ¿Cual es la infraestructura para hacer procesamiento distribuido de big data?
 
-Tres cosas claves: Hadward, software y conceptos básicos de redes.
+- Para construir una infraestructura para el procesamiento distribuido hay que tener en cuenta tres cosas claves: Hardware, software y conceptos básicos de redes.
 
-- Hardware Infraestructura:
-  - **Clusters. 7:30**
-    - Se arma con los racks
-  - Racks: Unidad de organización.
-    Puede tener elementos de procesamiento o almacenamiento.
-    Los elementos deben estar interconectados para que trabajen juntos.
-    - Se debe escoger con cuidado las unidades de procesamiento y almacenamiento.
+#### Hardware e Infraestructura
 
-        ![Untitled](resources/Untitled%2028.png)
+- **Clusters**
+  - Se arma con los racks
+- **Racks:** Unidad de organización.
+  - Puede tener elementos de procesamiento o almacenamiento.
+  - Los elementos deben estar interconectados para que trabajen juntos.
+  - Se debe escoger con cuidado las unidades de procesamiento y almacenamiento.
 
-    - KVM: Comparte el mouse, teclado y pantalla que puede manejar una unidad de rack. Solo 1 a la vez.
-    - Se accede de forma remotamente desde otro computador.
+  ![Untitled](resources/Untitled%2028.png)
 
-        ![Untitled](resources/Untitled%2029.png)
+  - **KVM**: Comparte el mouse, teclado y pantalla para que se pueda manejar una unidad de rack. Solo 1 a la vez.
+  - Para acceder a un rack se hace de forma remota desde otro computador.
 
-  - Debe ordenarse los clables para poder identificarlo. (Ingenieros telematicos o ingenieros de red). Esto no puede ser un desorden
-  - Its components.
+  ![Untitled](resources/Untitled%2029.png)
+
+- Debe ordenarse los cables para poder identificarlo. (Normalmente lo hacen los Ingenieros telemáticos o ingenieros de red)
+- Los cables de red no pueden ser un desorden.
+- Its components.
 
 ![Untitled](resources/Untitled%2030.png)
 
 - Nodos de procesamiento:
-  - Se debe controlar el calor.
+- Se debe controlar el calor.
 
-    ![Untitled](resources/Untitled%2031.png)
+  ![Untitled](resources/Untitled%2031.png)
 
-  - Tiene dos interfaces de red para tener tolerancia de fallos.
-- Elementos de red:
+- Tiene dos interfaces de red para tener tolerancia de fallos.
+
+#### Elementos de red
 
 ![Untitled](resources/Untitled%2032.png)
 
-Red de computadores:
+#### Red de computadores
 
 ![Untitled](resources/Untitled%2033.png)
 
-Almacenamiento:
+#### Almacenamiento
 
-La jerarquía de memoria.
+##### La jerarquía de memoria
 
-![Untitled](resources/Untitled%2034.png)
+  ![Untitled](resources/Untitled%2034.png)
 
-El Nivel 5:
+  El Nivel 5:
 
-![Untitled](resources/Untitled%2035.png)
+  ![Untitled](resources/Untitled%2035.png)
 
-![Untitled](resources/Untitled%2036.png)
+  ![Untitled](resources/Untitled%2036.png)
 
-- Las latencias normalmente se miden por tipo de operación (escritura, actualizar, borrado, lectura)
+- Las latencias normalmente se miden por tipo de operación (escritura, actualizar, borrado, lectura).
 - Hay que combinar el gobierno de datos con la arquitectura de datos. El gobierno por si solo no es suficiente.
 
-DAS:
+##### DAS
 
 ![Untitled](resources/Untitled%2037.png)
 
-- DAS (Direct Attached Storage): Caja de almacenamiento, no permite compartir datos con otros computadores.
+- **DAS (Direct Attached Storage)**: Caja de almacenamiento, no permite compartir datos con otros computadores.
 - Se puede acceder a los datos de un DAS desde otros computadores a partir de la red y un software. Sin embargo, al conectar muchos computadores (4) de esta forma el rendimiento se viene al piso.
-- El DAS sirve para empezar.
-- Para organizaciones que el nivel de madurez es muy bajo.
+- El DAS es una muy buena opción para empezar en organizaciones que están entrando al manejo de datos.
+- Ideal para organizaciones que el nivel de madurez es muy bajo.
 
-NAS:
+##### NAS
 
 ![Untitled](resources/Untitled%2038.png)
 
-- Si la empresa tiene un nivel de madurez más alto. Donde varios equipos tienen que acceder a los datos es mejor empezar por un NAS.
+- Si la empresa tiene un nivel de madurez más alto, donde varios equipos tienen que acceder a los datos es mejor empezar por un NAS.
 - Pensado para el uso concurrente por parte de diferentes equipos.
-- Apróximadamente  hasta 15 personas haciendo tareas de analitica de forma concurrente.
-- No se conecta directamente a un computaor.
+- Aproximadamente hasta 15 personas haciendo tareas de analítica de forma concurrente.
+- No se conecta directamente a un computador.
 - Solución para los problemas intermedios.
 
-SAN:
+##### SAN
 
 - Cuando los requerimientos sobrepasan las capacidades de un NAS, se pasa al SAN.
 - Para procesamiento de datos más complejo.
@@ -363,7 +374,7 @@ SAN:
 ![Untitled](resources/Untitled%2040.png)
 
 - Normalmente los servidores de procesamiento se deben conectar al switch de Fibra.
-- Los cientificos de datos, correrían los modelos sobre los servidores.
+- Los científicos de datos, correrían los modelos sobre los servidores.
 
 ![Untitled](resources/Untitled%2041.png)
 
@@ -426,7 +437,7 @@ SAN:
 ![Untitled](resources/Untitled%2046.png)
 
 - IaaS:
-  - Soluciona el problema de obselecencia.
+  - Soluciona el problema de obsolescencia.
   - Refrigeración.
   - Mantenimiento.
   - Ofrece la infraestructura.
@@ -434,7 +445,7 @@ SAN:
     ![Untitled](resources/Untitled%2047.png)
 
 - PaaS:
-  - Se tiene todos los servicios genericos listos para usarlos.
+  - Se tiene todos los servicios genéricos listos para usarlos.
   - Ya tiene listo sistemas operativos y todo.
 
     ![Untitled](resources/Untitled%2048.png)
@@ -464,7 +475,7 @@ Pros:
 
 ![Untitled](resources/Untitled%2051.png)
 
-- Disponibilidad de recursos instantaneo.
+- Disponibilidad de recursos instantáneo.
 - Escalabilidad horizontal.
 - Libre de mantenimiento del hardware.
 - No se necesita un equipo muy grande para manejar hardware, network e infraestructura
