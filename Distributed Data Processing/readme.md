@@ -1,6 +1,6 @@
 # Introducción al Procesamiento Distribuido de Datos
 
-Profesor: Gabriel Tamura.
+Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura).
 
 ## Introducción al Big Data
 
@@ -18,11 +18,11 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 ### Notas
 
 - El big data es el detonante de la ciencia de datos.
-- Como científicos de datos, debemos conocer objeto de estudio de la ciencia de datos. En este caso los datos, por lo tanto debemos conocer todo lo relacionado con los datos.
+- El científico de datos, debe conocer el objeto de estudio de la ciencia de datos. En este caso los datos, por lo tanto conoce todo lo relacionado con los datos.
 
 ### ¿Qué es el Big Data?
 
-- El campo que que trata formas de analizar, extraer información de datasets que son muy grandes o muy complejos para las formas de procesamiento de datos tradicionales.
+- Es el campo que que trata formas de analizar, extraer información de datasets que son muy grandes o muy complejos para las formas de procesamiento de datos tradicionales.
 - Es el objeto de estudio de la ciencia de datos.
 
 ### Símil entre la química y la ciencia de datos
@@ -37,12 +37,13 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 ![Untitled](resources/Untitled%201.png)
 
 - La ciencia de datos permite analizar fenómenos actuales con los datos.
-  - Describir el fenómeno que ocurre → Analítica descriptiva → Es el qué ocurre, explica que fue lo que ocurrió.
-    Observar el fenomeno, recoger muchos datos, explicar el fenomeno.
-  - Analitica de Diagnostico → Razón por la que el fenomeno ocurre.
-  - Análitica Predictiva: Como entiendo el fenomeno ahora puedo hacer predicciones sobre esto.
-  Se modela el fenomeno.
-  - Construir solucciones con los datos y modelos obtenidos.
+  - La **analítica descriptiva**, busca describir un fenómeno con los datos,  busca explicar que fue lo que pasó (describe que fue lo que ocurrió).
+  Se observa el fenómeno, se recolecta datos y se explica el fenómeno con los datos.
+  - La **analítica de Diagnostico**, busca la razón por la que el fenómeno ocurre.
+  - En la **analítica Predictiva**una vez se entiende el fenómeno, se busca hacer predicciones sobre él.
+  Se modela el fenómeno.
+
+- El científico de datos construye soluciones con los datos y modelos obtenidos.
 
 ### Los origenes de la ciencia de datos
 
