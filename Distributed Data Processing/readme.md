@@ -45,11 +45,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Data Lake en la Cloud](#data-lake-en-la-cloud)
     - [Retos, Pros y Contras de Cloud](#retos-pros-y-contras-de-cloud)
     - [Como construir un Data Lake](#como-construir-un-data-lake)
-  - [Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red](#del-pc-al-datalake-operación-básica-de-gnulinux-y-configuración-de-red)
-    - [**Para Recordar**](#para-recordar-2)
-    - [**Palabras Claves**](#palabras-claves-2)
-    - [**Preguntas Importantes**](#preguntas-importantes-2)
-    - [Notas](#notas-1)
+    - [📌 RESUMEN](#-resumen-1)
 
 ## Introducción al Big Data
 
@@ -391,22 +387,22 @@ No se sabe que datos son importantes como para borrarlos.
 
 ![Untitled](resources/Untitled%2042.png)
 
-- Escalamiento Vertical: Scale Up
+- Escalamiento Vertical (**Scale Up**): Se agrega más memoria, más procesamiento, más almacenamiento.
   - Tiene un limite
   - Se da según las necesidades de procesamiento y almacenamiento que se requieran.
-  - Es costoso
+  - Es costoso.
   - Tiene mejor performance.
   - Costo de mantenimiento es caro.
   - Cuellos de botella
     - Al estar conectado a un switch para obtener los datos, los procesadores internos tienen que coordinarse para procesar los datos.
-  - Limitado por la capavidad del servidor.
-- Escalamiento horizontal: Scale out
+  - Limitado por la capacidad del servidor.
+- Escalamiento horizontal (**Scale out**): Se agrega más servidores.
   - Es mejor comprar varios computadores pequeños.
   - Genera más problemas para ciertas técnicas y modelos.
-  - Operaciones más lentas.
+  - Operaciones más lentas (menor performance).
   - Costo de transportar datos en la red (Tiempo).
-  - Facil y flexible.
-  - Relaticamente barato.
+  - Fácil y flexible.
+  - Relativamente barato.
 
 ### Infraestructura en el negocio
 
@@ -493,31 +489,4 @@ Pros:
 
 ![Untitled](resources/Untitled%2053.png)
 
-<aside>
-📌 **RESUMEN**:
-
-</aside>
-
-## Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red
-
-### **Para Recordar**
-
-### **Palabras Claves**
-
-### **Preguntas Importantes**
-
-### Notas
-
-- El computador es la herramienta básica de los cientificos de datos.
-- 3 Formas para usar el PC para mainupular datos.
-  - De forma Individual
-  - Indivudual-virtualizada: Cuando se desarrolla parte de la tarea, se escala al cluster.
-  - Parte de un cluster.
-- Verificar instalación de herramientas
-
-![Untitled](resources/Untitled%2054.png)
-
-<aside>
-📌 **RESUMEN**:
-
-</aside>
+### 📌 RESUMEN
