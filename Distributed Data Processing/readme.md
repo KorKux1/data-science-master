@@ -29,6 +29,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Implicaciones del Big Data](#implicaciones-del-big-data)
     - [Ciencia de Datos y Big Data](#ciencia-de-datos-y-big-data)
     - [¿La nube nos soluciona los retos de big data?](#la-nube-nos-soluciona-los-retos-de-big-data)
+    - [3 Dimensiones cuando hablamos de problemas de Big Data](#3-dimensiones-cuando-hablamos-de-problemas-de-big-data)
     - [¿Cual es la infraestructura para hacer procesamiento distribuido de big data?](#cual-es-la-infraestructura-para-hacer-procesamiento-distribuido-de-big-data)
     - [On Premise o Cloud](#on-premise-o-cloud)
     - [Tipos de escalamiento](#tipos-de-escalamiento)
@@ -234,47 +235,46 @@ No se sabe que datos son importantes como para borrarlos.
 ### ¿La nube nos soluciona los retos de big data?
 
 - No en todos los casos.
-- Por si solo usar una maquina cloud con grandes recursos para trabajar en Big Data no en todos los casos nos funciona.
+- Por si solo usar una maquina cloud con grandes recursos para trabajar en Big Data no en todos los casos es suficiente.
 
 ![Untitled](resources/Untitled%2021.png)
 
 ![Untitled](resources/Untitled%2022.png)
 
-- Con Big Data hablamos de problemas grandes:
+- Con Big Data hablamos de problemas grandes, por lo que necesitamos de una infraestructura que nos permita escalar.
 
-3 Dimensiones:
+### 3 Dimensiones cuando hablamos de problemas de Big Data
 
 ![Untitled](resources/Untitled%2023.png)
 
-Hay muchos problemas ¿Y las soluciones?
-
-- Para las soluciones nos remontamos hasta el tema de los BI.
-- Los data warehouse para algunas organizaciones sigue siendo muy bueno.
-  - A pesar de que los data warehouse son antiguos aún son validos para varios casos de análitica.
+- Hay muchos problemas y retos que tratar cuando hablamos de Big Data ¿Y las soluciones?
+  - Para las soluciones nos remontamos hasta el Business Intelligence (BI).
+  - Los data warehouse para algunas organizaciones sigue siendo muy bueno.
+    - A pesar de que los data warehouse son antiguos aún son validos para varios casos de analítica.
 
 ![Untitled](resources/Untitled%2024.png)
 
 - Los datos pueden estar en varias fuentes, pero los centralizamos para el uso de todos.
-- Aunque ya en teoría se tenía soluciones tecnologías el big data crea problemas de estrategia y arquitectura.
-- Se plantea los data swarmp para almacenar datos.
+- Aunque ya en teoría se tenía soluciones tecnológicas para manejar grandes volúmenes de datos, el big data crea problemas de estrategia y arquitectura.
+- Se plantea los data Swamp (Pantanos de datos) para almacenar datos.
 
 ![Untitled](resources/Untitled%2025.png)
 
-- Una evolución de los data swamp son los data lake donde se busca tener los datos más organizados que un data swarm y que nos permita más opciones.
+- Una evolución de los data swamp son los data lake donde se busca tener los datos más organizados que un data swarm, lo que nos permite más opciones.
 
 ![Untitled](resources/Untitled%2026.png)
 
-- Los datos tenemos que tenerlos de una forma odenada (La gobernanza de los datos).
-Todos deben seguir la gobernanza de los datos para que se pueda sacar el máximo provecho de los datos.
+- Los datos deben almacenarse de una forma ordenada (La gobernanza de los datos).
+- Todos en la organización deben seguir la gobernanza de los datos para que se pueda sacar el máximo provecho de los datos.
 
 ![Untitled](resources/Untitled%2027.png)
 
-- Como ya con un solo computador no podemos procesar los datos, necesitamos distribuir.
-- Distribuyendo apoyamos:
+- Como ya con un solo computador no podemos procesar los datos, necesitamos **distribuir**.
+- Distribuyendo aportamos en:
   - En la escalabilidad y rendimiento de los sistemas.
-  - Tolerencia a fallas.
+  - Tolerancia a fallas.
     Si un computador falla durante el procesamiento no perdemos todo el trabajo realizado.
-  - Variedad de los formatos.
+  - Facilita trabajar con una gran variedad de formatos.
   - Muchas aplicaciones.
   - Agrega valor.
 - La mejor solución que tenemos por ahora para estos problemas son los data lake: Distribución de datos y distribución de procesamiento.
