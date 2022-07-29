@@ -22,7 +22,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Crecimiento del Big Data](#crecimiento-del-big-data)
     - [Las 4 V de IBM para el Big Data](#las-4-v-de-ibm-para-el-big-data)
     - [📌 RESUMEN](#-resumen)
-  - [Big Data](#big-data)
+  - [Big Data and Data Lake](#big-data-and-data-lake)
     - [Para Recordar](#para-recordar-1)
     - [Palabras Claves](#palabras-claves-1)
     - [Preguntas Importantes](#preguntas-importantes-1)
@@ -203,7 +203,7 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 - Como científicos de datos debemos tener un dominio de expertise.
 - Como científicos de datos debemos entender todo lo relacionado con los datos, desde sus fundamentos.
 
-## Big Data
+## Big Data and Data Lake
 
 ### Para Recordar
 
