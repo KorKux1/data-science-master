@@ -27,7 +27,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Palabras Claves](#palabras-claves-1)
     - [**Preguntas Importantes**](#preguntas-importantes-1)
     - [Implicaciones del Big Data](#implicaciones-del-big-data)
-    - [Ciencia de Datos](#ciencia-de-datos)
+    - [Ciencia de Datos y Big Data](#ciencia-de-datos-y-big-data)
     - [¿La nube nos soluciona los retos de big data?](#la-nube-nos-soluciona-los-retos-de-big-data)
     - [¿Cual es la infraestructura para hacer procesamiento distribuido de big data?](#cual-es-la-infraestructura-para-hacer-procesamiento-distribuido-de-big-data)
     - [On Premise o Cloud](#on-premise-o-cloud)
@@ -221,15 +221,15 @@ Si se quiere hacer análisis de estos motores para saber cuando hacer el manteni
   Por ejemplo: los datos recogidos por los sensores están capturando bien los datos? el clima, la temperatura, la humedad o cualquier otro factor los puede estar afectando y estos factores que pueden afectar nuestros datos lo estamos contemplando?
   Son preguntas que tenemos que realizarnos al trabajar con Big Data.
 
-### Ciencia de Datos
+### Ciencia de Datos y Big Data
 
 - La ciencia de datos surge a partir de la big data.
 
 ![Untitled](resources/Untitled%2020.png)
 
 - Definitivamente no se deben borrar los datos.
-No sabemos que datos son importantes como para borrarlos.
-- Hacer procesamiento secuencial de big data puede ser muy demorado, normalmente es mejor usar procesamiento distribuido.
+No se sabe que datos son importantes como para borrarlos.
+- Hacer procesamiento secuencial de Big Data puede ser muy demorado, normalmente es mejor usar procesamiento distribuido.
 
 ### ¿La nube nos soluciona los retos de big data?
 
