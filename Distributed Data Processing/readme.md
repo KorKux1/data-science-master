@@ -380,11 +380,11 @@ No se sabe que datos son importantes como para borrarlos.
 
 ### On Premise o Cloud
 
-- Balance entre on premise y la nube.
+- Normalmente se busca un balance entre on premise y la nube. Así funciona en la mayoría de las organizaciones con alto nivel de madurez.
 - Empezar on premise, ahí se mirar la nube.
-- La nube es costosa y requiere buen canal de subida y bajada.
-- Si no se tiene experencia es mejor empezar on premise, dominando la tecnologia en sitio.
-- Se interactura de la misma forma on premise o Cloud.
+- La nube es costosa y requiere buen canal de subida y bajada de internet.
+- Si no se tiene experiencia es mejor empezar on premise, dominando la tecnología en sitio.
+- Se interactúa de la misma forma on premise o Cloud.
 - Por detrás On Premise y Cloud funcionan igual.
 
 ### Tipos de escalamiento
