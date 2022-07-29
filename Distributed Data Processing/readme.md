@@ -67,6 +67,8 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 ### Preguntas Importantes
 
+- Para una organización que apenas va a entrar a procesar sus datos y buscar valor a partir de ellos. ¿Por dónde empiezo? ¿Un Data warehouse? ¿Definiendo la gobernanza de los datos?
+
 ### Notas
 
 - El big data es el detonante de la ciencia de datos.
@@ -501,3 +503,10 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 ![Untitled](resources/Untitled%2053.png)
 
 ### 📌 RESUMEN
+
+- Los data lake son repositorios de datos centralizados diseñado para almacenar, procesar y proteger grandes cantidades de datos estructurados, semi-estructurados o sin estructurar.
+- Los data warehouses siguen siendo una opción para muchos problemas de los datos.
+- Cuando se construye un data lake, se debe tener en cuenta el contexto de la organización.
+- Los DAS, NAS y SAN son infraestructura para el almacenamiento y procesamiento de datos.
+- Los DAS son ideales para organizaciones que se van a introducir al mundo de los datos.
+- Hay que encontrar un balance entre on premise y la nube.
