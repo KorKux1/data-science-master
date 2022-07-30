@@ -53,40 +53,6 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
       - [Pros](#pros)
     - [Como construir un Data Lake](#como-construir-un-data-lake)
     - [📌 RESUMEN](#-resumen-1)
-<<<<<<< HEAD
-  - [Big Data and Data Lake](#big-data-and-data-lake)
-    - [Para Recordar](#para-recordar-1)
-    - [Palabras Claves](#palabras-claves-1)
-    - [Preguntas Importantes](#preguntas-importantes-1)
-    - [Implicaciones del Big Data](#implicaciones-del-big-data)
-    - [Ciencia de Datos y Big Data](#ciencia-de-datos-y-big-data)
-    - [¿La nube nos soluciona los retos de big data?](#la-nube-nos-soluciona-los-retos-de-big-data)
-    - [3 Dimensiones cuando hablamos de problemas de Big Data](#3-dimensiones-cuando-hablamos-de-problemas-de-big-data)
-    - [¿Cual es la infraestructura para hacer procesamiento distribuido de big data?](#cual-es-la-infraestructura-para-hacer-procesamiento-distribuido-de-big-data)
-      - [Hardware e Infraestructura](#hardware-e-infraestructura)
-      - [Elementos de red](#elementos-de-red)
-      - [Red de computadores](#red-de-computadores)
-      - [Almacenamiento](#almacenamiento)
-        - [La jerarquía de memoria](#la-jerarquía-de-memoria)
-        - [DAS](#das)
-        - [NAS](#nas)
-        - [SAN](#san)
-    - [On Premise o Cloud](#on-premise-o-cloud)
-    - [Tipos de escalamiento](#tipos-de-escalamiento)
-    - [Infraestructura en el negocio](#infraestructura-en-el-negocio)
-    - [Data Lake en la Cloud](#data-lake-en-la-cloud)
-      - [¿Qué clase de Soporte se necesita?](#qué-clase-de-soporte-se-necesita)
-        - [IaaS](#iaas)
-        - [PaaS](#paas)
-        - [SaaS](#saas)
-    - [Retos, Pros y Contras de Cloud](#retos-pros-y-contras-de-cloud)
-      - [Retos](#retos)
-      - [Cons](#cons)
-      - [Pros](#pros)
-    - [Como construir un Data Lake](#como-construir-un-data-lake)
-    - [📌 RESUMEN](#-resumen-1)
-=======
->>>>>>> 48af648c4a803bef7f33095f78e3860db28b3644
 
 ## Introducción al Big Data
 
@@ -101,11 +67,8 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 ### Preguntas Importantes
 
-<<<<<<< HEAD
 - Para una organización que apenas va a entrar a procesar sus datos y buscar valor a partir de ellos. ¿Por dónde empiezo? ¿Un Data warehouse? ¿Definiendo la gobernanza de los datos?
 
-=======
->>>>>>> 48af648c4a803bef7f33095f78e3860db28b3644
 ### Notas
 
 - El big data es el detonante de la ciencia de datos.
