@@ -370,7 +370,7 @@ No se sabe que datos son importantes como para borrarlos.
 ##### SAN
 
 - Cuando los requerimientos sobrepasan las capacidades de un NAS, se pasa al SAN.
-- Para un almacenamiento de datos más complejo.
+- Cuando se enfrenta a problemas de datos más complejos y se requiere un mayor almacenamiento de datos.
 
 ![Untitled](resources/Untitled%2039.png)
 
