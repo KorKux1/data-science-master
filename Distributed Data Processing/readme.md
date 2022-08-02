@@ -53,40 +53,6 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
       - [Pros](#pros)
     - [Como construir un Data Lake](#como-construir-un-data-lake)
     - [📌 RESUMEN](#-resumen-1)
-<<<<<<< HEAD
-  - [Big Data and Data Lake](#big-data-and-data-lake)
-    - [Para Recordar](#para-recordar-1)
-    - [Palabras Claves](#palabras-claves-1)
-    - [Preguntas Importantes](#preguntas-importantes-1)
-    - [Implicaciones del Big Data](#implicaciones-del-big-data)
-    - [Ciencia de Datos y Big Data](#ciencia-de-datos-y-big-data)
-    - [¿La nube nos soluciona los retos de big data?](#la-nube-nos-soluciona-los-retos-de-big-data)
-    - [3 Dimensiones cuando hablamos de problemas de Big Data](#3-dimensiones-cuando-hablamos-de-problemas-de-big-data)
-    - [¿Cual es la infraestructura para hacer procesamiento distribuido de big data?](#cual-es-la-infraestructura-para-hacer-procesamiento-distribuido-de-big-data)
-      - [Hardware e Infraestructura](#hardware-e-infraestructura)
-      - [Elementos de red](#elementos-de-red)
-      - [Red de computadores](#red-de-computadores)
-      - [Almacenamiento](#almacenamiento)
-        - [La jerarquía de memoria](#la-jerarquía-de-memoria)
-        - [DAS](#das)
-        - [NAS](#nas)
-        - [SAN](#san)
-    - [On Premise o Cloud](#on-premise-o-cloud)
-    - [Tipos de escalamiento](#tipos-de-escalamiento)
-    - [Infraestructura en el negocio](#infraestructura-en-el-negocio)
-    - [Data Lake en la Cloud](#data-lake-en-la-cloud)
-      - [¿Qué clase de Soporte se necesita?](#qué-clase-de-soporte-se-necesita)
-        - [IaaS](#iaas)
-        - [PaaS](#paas)
-        - [SaaS](#saas)
-    - [Retos, Pros y Contras de Cloud](#retos-pros-y-contras-de-cloud)
-      - [Retos](#retos)
-      - [Cons](#cons)
-      - [Pros](#pros)
-    - [Como construir un Data Lake](#como-construir-un-data-lake)
-    - [📌 RESUMEN](#-resumen-1)
-=======
->>>>>>> 48af648c4a803bef7f33095f78e3860db28b3644
 
 ## Introducción al Big Data
 
@@ -101,11 +67,8 @@ Se caracteriza por las 4 V: su volumen, velocidad, variedad y veracidad.
 
 ### Preguntas Importantes
 
-<<<<<<< HEAD
 - Para una organización que apenas va a entrar a procesar sus datos y buscar valor a partir de ellos. ¿Por dónde empiezo? ¿Un Data warehouse? ¿Definiendo la gobernanza de los datos?
 
-=======
->>>>>>> 48af648c4a803bef7f33095f78e3860db28b3644
 ### Notas
 
 - El big data es el detonante de la ciencia de datos.
@@ -407,7 +370,7 @@ No se sabe que datos son importantes como para borrarlos.
 ##### SAN
 
 - Cuando los requerimientos sobrepasan las capacidades de un NAS, se pasa al SAN.
-- Para procesamiento de datos más complejo.
+- Cuando se enfrenta a problemas de datos más complejos y se requiere un mayor almacenamiento de datos.
 
 ![Untitled](resources/Untitled%2039.png)
 
@@ -541,9 +504,12 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 
 ### 📌 RESUMEN
 
-- Los data lake son repositorios de datos centralizados diseñado para almacenar, procesar y proteger grandes cantidades de datos estructurados, semi-estructurados o sin estructurar.
+- Los data lake son repositorios de datos centralizados diseñado para almacenar, procesar y proteger grandes cantidades de datos estructurados, semi-estructurados o no estructurados.
+  - Cuando se dice datos sin estructurar, hace entender que los datos necesitan pasar por un proceso de estructuración.
+- El diseño de los data lake se debe pensar en los requerimientos y capacidad que se necesita a futuro.
 - Los data warehouses siguen siendo una opción para muchos problemas de los datos.
 - Cuando se construye un data lake, se debe tener en cuenta el contexto de la organización.
-- Los DAS, NAS y SAN son infraestructura para el almacenamiento y procesamiento de datos.
+- Los DAS, NAS y SAN son infraestructura para el **almacenamiento** de datos.
 - Los DAS son ideales para organizaciones que se van a introducir al mundo de los datos.
 - Hay que encontrar un balance entre on premise y la nube.
+- Los clusters se construyen a partir componentes físicos y lógicos.
