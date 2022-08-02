@@ -370,7 +370,7 @@ No se sabe que datos son importantes como para borrarlos.
 ##### SAN
 
 - Cuando los requerimientos sobrepasan las capacidades de un NAS, se pasa al SAN.
-- Para procesamiento de datos más complejo.
+- Para un almacenamiento de datos más complejo.
 
 ![Untitled](resources/Untitled%2039.png)
 
@@ -504,9 +504,12 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 
 ### 📌 RESUMEN
 
-- Los data lake son repositorios de datos centralizados diseñado para almacenar, procesar y proteger grandes cantidades de datos estructurados, semi-estructurados o sin estructurar.
+- Los data lake son repositorios de datos centralizados diseñado para almacenar, procesar y proteger grandes cantidades de datos estructurados, semi-estructurados o no estructurados.
+  - Cuando se dice datos sin estructurar, hace entender que los datos necesitan pasar por un proceso de estructuración.
+- El diseño de los data lake se debe pensar en los requerimientos y capacidad que se necesita a futuro.
 - Los data warehouses siguen siendo una opción para muchos problemas de los datos.
 - Cuando se construye un data lake, se debe tener en cuenta el contexto de la organización.
-- Los DAS, NAS y SAN son infraestructura para el almacenamiento y procesamiento de datos.
+- Los DAS, NAS y SAN son infraestructura para el **almacenamiento** de datos.
 - Los DAS son ideales para organizaciones que se van a introducir al mundo de los datos.
 - Hay que encontrar un balance entre on premise y la nube.
+- Los clusters se construyen a partir componentes físicos y lógicos.
