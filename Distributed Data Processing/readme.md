@@ -67,6 +67,8 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Filesystem](#filesystem)
     - [Estructura Estándar de directorios](#estructura-estándar-de-directorios)
     - [File Manager](#file-manager)
+    - [Configuración física de red](#configuración-física-de-red)
+    - [Configuración Lógica de Red](#configuración-lógica-de-red)
 
 ## Introducción al Big Data
 
@@ -653,3 +655,25 @@ tree -d -L 1 /
 - Permite navegar por el sistema de archivos.
 
 ![Untitled](resources/Untitled%2060.png)
+
+### Configuración física de red
+
+- Los computadores se pueden conectar:
+  - Inalámbricamente.
+    - Más lento y menos confiable
+  - Por cable
+    - Mayor rapidez y más confiabilidad.
+
+![Configuración de Red del LIASON](resources/Untitled%2061.png)
+
+### Configuración Lógica de Red
+
+- Para funcionar en cluster, además de conectar el cable de red al socket respectivo, se debe verificar la configuración lógica (en el sistema operativo del computador). En la ventana de configuración de red.
+
+![Ejemplo configuración lógica de red](resources/Untitled%2062.png)
+
+- Los data lake como recomendación debe tener doble infraestructura de red:
+  - Una con salida a internet
+  - Otra no debe tener salida a internet, solo debe conectar los computadores que conforman el cluster.
+- Aunque físicamente todos los componentes de un data lake estén en un rack, lógicamente se puede construir varios clusters a partir de esa infraestructura.
+- El archivo /etc/hosts especifica todas las máquinas de los laboratorios.
