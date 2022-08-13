@@ -71,6 +71,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Configuración Lógica de Red](#configuración-lógica-de-red)
     - [Manejo de archivos con la terminal](#manejo-de-archivos-con-la-terminal)
     - [Comandos útiles](#comandos-útiles)
+    - [Manejo de archivos grandes](#manejo-de-archivos-grandes)
 
 ## Introducción al Big Data
 
@@ -687,3 +688,32 @@ tree -d -L 1 /
 ### Comandos útiles
 
 ![Untitled](resources/Untitled%2064.png)
+
+### Manejo de archivos grandes
+
+- Transferir archivos grandes por internet es costoso por el ancho de banda.
+- Se puede comprimir los archivos grandes.
+- Se puede usar split para partir los datos.
+- Es importante comprobar la integridad de los archivos.
+- Un ejemplo de como podemos hacer más fácil la transferencia de archivos:
+  
+![Untitled](resources/Untitled%2065.png)
+
+```bash
+# Consultar el tamaño de un directorio
+du -sh CQS-VM-5.4.2-0-virtualbox-ORIG/
+# Output: 11G     CQS-VM-5.4.2-0-virtualbox-ORIG
+```
+
+```bash
+# Comprimir un directorio
+zip -r cloudera-quickstart-vm-5.4.2-0-virtualbox-GTM-configured.zip CQS-VM-5.4.2-0-virtualbox-ORIG
+# Output: 
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/ (stored 0%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/cloudera-quickstart-vm-5.4.2-0-virtualbox-disk1.vdi (deflated 46%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/CQS-VM-5.4.2-0-virtualbox-ORIG.vbox(deflated 74%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/CQS-VM-5.4.2-0-virtualbox-ORIG.vbox-prev (deflated 74%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/Logs/ (stored 0%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/Logs/VBox.log (deflated 80%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/Logs/VBox.log.1 (deflated 81%)
+```
