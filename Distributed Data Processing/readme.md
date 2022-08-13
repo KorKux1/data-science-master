@@ -61,6 +61,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Verificar instalación de herramientas](#verificar-instalación-de-herramientas)
     - [Tipos de Licencia de Software](#tipos-de-licencia-de-software)
       - [Las licencias más comunes](#las-licencias-más-comunes)
+    - [Funciones de un sistema operativo](#funciones-de-un-sistema-operativo)
 
 ## Introducción al Big Data
 
@@ -574,3 +575,11 @@ Por ejemplo:
 #### Las licencias más comunes
 
 ![Untitled](resources/Untitled%2056.png)
+
+### Funciones de un sistema operativo
+
+- El sistema operativo es el administrador de los recursos del Hardware.
+- El científico de datos debe cuidar los recursos.
+  - El consumo de recursos ayuda a saber si un modelo es muy voraz o si tiene problemas de rendimiento.
+
+![Untitled](resources/Untitled%2057.png)
