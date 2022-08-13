@@ -677,3 +677,4 @@ tree -d -L 1 /
   - Otra no debe tener salida a internet, solo debe conectar los computadores que conforman el cluster.
 - Aunque físicamente todos los componentes de un data lake estén en un rack, lógicamente se puede construir varios clusters a partir de esa infraestructura.
 - El archivo /etc/hosts especifica todas las máquinas de los laboratorios.
+ 
