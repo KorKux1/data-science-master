@@ -717,3 +717,8 @@ zip -r cloudera-quickstart-vm-5.4.2-0-virtualbox-GTM-configured.zip CQS-VM-5.4.2
 # adding: CQS-VM-5.4.2-0-virtualbox-ORIG/Logs/VBox.log (deflated 80%)
 # adding: CQS-VM-5.4.2-0-virtualbox-ORIG/Logs/VBox.log.1 (deflated 81%)
 ```
+
+```bash
+# Descargar con wget con reconexión automática en caso de caídas del internet
+wget -c --retry-connrefused --tries=0 --timeout=5 <url>
+```
