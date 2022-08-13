@@ -62,6 +62,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Tipos de Licencia de Software](#tipos-de-licencia-de-software)
       - [Las licencias más comunes](#las-licencias-más-comunes)
     - [Funciones de un sistema operativo](#funciones-de-un-sistema-operativo)
+    - [¿Cómo el SO administra los recursos del Hardware?](#cómo-el-so-administra-los-recursos-del-hardware)
 
 ## Introducción al Big Data
 
@@ -583,3 +584,19 @@ Por ejemplo:
   - El consumo de recursos ayuda a saber si un modelo es muy voraz o si tiene problemas de rendimiento.
 
 ![Untitled](resources/Untitled%2057.png)
+
+### ¿Cómo el SO administra los recursos del Hardware?
+
+- Los recursos se deben administrar.
+  - La administración de recursos impacta en el rendimiento de los modelos.
+- Los SO son.
+  - Multi usuario.
+    - Se comparte los recursos entre otros usuarios.
+  - Multi Procesamiento.
+  - Cada programa se ejecuta de forma concurrente.
+
+![Untitled](resources/Untitled%2058.png)
+
+- Es importante monitorizar los recursos durante el entrenamiento de los modelos, por ejemplo: si vemos que la consumo de nuestra ram, procesador o otro recurso está muy alto esto impactará en los tiempos de entrenamiento.
+  - Esto también nos puede indicar si el modelo consume muchos recursos o por el contrario tiene un problema que hace que consuma mucho más recursos del que debería.
+- El consumo de recursos nos da información que debemos analizar durante la construcción de nuestros modelos.
