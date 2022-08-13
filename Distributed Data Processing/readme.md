@@ -66,6 +66,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Usuarios y Grupos](#usuarios-y-grupos)
     - [Filesystem](#filesystem)
     - [Estructura Estándar de directorios](#estructura-estándar-de-directorios)
+    - [File Manager](#file-manager)
 
 ## Introducción al Big Data
 
@@ -646,3 +647,9 @@ Algunos directorios:
 # Ver el árbol de directorio hasta un nivel de 1
 tree -d -L 1 /
 ```
+
+### File Manager
+
+- Permite navegar por el sistema de archivos.
+
+![Untitled](resources/Untitled%2060.png)
