@@ -73,6 +73,8 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Comandos útiles](#comandos-útiles)
     - [Manejo de archivos grandes](#manejo-de-archivos-grandes)
     - [Reconstruyendo archivos que fueron separados](#reconstruyendo-archivos-que-fueron-separados)
+    - [Para poner en practica](#para-poner-en-practica)
+    - [Entender del negocio a traves de sus datos](#entender-del-negocio-a-traves-de-sus-datos)
 
 ## Introducción al Big Data
 
@@ -727,3 +729,21 @@ wget -c --retry-connrefused --tries=0 --timeout=5 <url>
 ### Reconstruyendo archivos que fueron separados
 
 ![Untitled](resources/Untitled%2066.png)
+
+### Para poner en practica
+
+
+![Untitled](resources/Untitled%2067.png)
+
+### Entender del negocio a traves de sus datos
+
+- Los científicos de datos ayudan a las personas que toman decisiones a hacer cambio de paradigma de tomar la decisiones a partir de la intuición a hacerlo a partir de los datos, teniendo conversaciones con los datos.
+
+Ejercicio:
+
+![Untitled](resources/Untitled%2068.png)
+
+<aside>
+📌 **RESUMEN**:
+
+</aside>
