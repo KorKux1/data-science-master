@@ -72,6 +72,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Manejo de archivos con la terminal](#manejo-de-archivos-con-la-terminal)
     - [Comandos útiles](#comandos-útiles)
     - [Manejo de archivos grandes](#manejo-de-archivos-grandes)
+    - [Reconstruyendo archivos que fueron separados](#reconstruyendo-archivos-que-fueron-separados)
 
 ## Introducción al Big Data
 
@@ -722,3 +723,7 @@ zip -r cloudera-quickstart-vm-5.4.2-0-virtualbox-GTM-configured.zip CQS-VM-5.4.2
 # Descargar con wget con reconexión automática en caso de caídas del internet
 wget -c --retry-connrefused --tries=0 --timeout=5 <url>
 ```
+
+### Reconstruyendo archivos que fueron separados
+
+![Untitled](resources/Untitled%2066.png)
