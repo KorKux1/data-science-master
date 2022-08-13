@@ -55,6 +55,10 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [📌 RESUMEN](#-resumen-1)
   - [Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red](#del-pc-al-datalake-operación-básica-de-gnulinux-y-configuración-de-red)
     - [Para Recordar](#para-recordar-2)
+    - [**Palabras Claves**](#palabras-claves-2)
+    - [**Preguntas Importantes**](#preguntas-importantes-2)
+    - [Notas](#notas-1)
+    - [Verificar instalación de herramientas](#verificar-instalación-de-herramientas)
 
 ## Introducción al Big Data
 
@@ -544,3 +548,19 @@ Por ejemplo:
     ```
 
 - Si no se cuenta con una conexión a internet estable o los datos son muy grandes se puede partir el archivo en varias partes y luego volverlos a unir.
+
+### **Palabras Claves**
+
+### **Preguntas Importantes**
+
+### Notas
+
+- El computador es la herramienta básica de los científicos de datos.
+- Hay 3 formas para usar el PC para manipular datos.
+  - De forma Individual
+  - Individual-virtualizada: primero se desarrolla parte de la tarea y luego se escala al cluster.
+  - Parte de un cluster.
+
+### Verificar instalación de herramientas
+
+![Untitled](resources/Untitled%2054.png)
