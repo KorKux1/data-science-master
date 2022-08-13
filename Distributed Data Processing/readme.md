@@ -64,6 +64,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [Funciones de un sistema operativo](#funciones-de-un-sistema-operativo)
     - [¿Cómo el SO administra los recursos del Hardware?](#cómo-el-so-administra-los-recursos-del-hardware)
     - [Usuarios y Grupos](#usuarios-y-grupos)
+    - [Filesystem](#filesystem)
 
 ## Introducción al Big Data
 
@@ -620,3 +621,10 @@ Por ejemplo:
     # También se puede ver las prioridades.
     top
     ```
+
+### Filesystem
+
+- Es una estructura lógica utilizada para almacenar archivos en una partición.
+- Los datos se guardan en el filesystem.
+- Define la forma de almacenar, organizar y recuperar todos los archivos del equipo, para hacer todas las operaciones sobre los datos eficientemente.
+- Partición: es una estructura físico-lógica en que se divide el espacio de almacenamiento de un disco duro.
