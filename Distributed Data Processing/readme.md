@@ -69,6 +69,8 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [File Manager](#file-manager)
     - [Configuración física de red](#configuración-física-de-red)
     - [Configuración Lógica de Red](#configuración-lógica-de-red)
+    - [Manejo de archivos con la terminal](#manejo-de-archivos-con-la-terminal)
+    - [Comandos útiles](#comandos-útiles)
 
 ## Introducción al Big Data
 
@@ -677,4 +679,11 @@ tree -d -L 1 /
   - Otra no debe tener salida a internet, solo debe conectar los computadores que conforman el cluster.
 - Aunque físicamente todos los componentes de un data lake estén en un rack, lógicamente se puede construir varios clusters a partir de esa infraestructura.
 - El archivo /etc/hosts especifica todas las máquinas de los laboratorios.
- 
+
+### Manejo de archivos con la terminal
+
+![Untitled](resources/Untitled%2063.png)
+
+### Comandos útiles
+
+![Untitled](resources/Untitled%2064.png)
