@@ -65,6 +65,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [¿Cómo el SO administra los recursos del Hardware?](#cómo-el-so-administra-los-recursos-del-hardware)
     - [Usuarios y Grupos](#usuarios-y-grupos)
     - [Filesystem](#filesystem)
+    - [Estructura Estándar de directorios](#estructura-estándar-de-directorios)
 
 ## Introducción al Big Data
 
@@ -628,3 +629,20 @@ Por ejemplo:
 - Los datos se guardan en el filesystem.
 - Define la forma de almacenar, organizar y recuperar todos los archivos del equipo, para hacer todas las operaciones sobre los datos eficientemente.
 - Partición: es una estructura físico-lógica en que se divide el espacio de almacenamiento de un disco duro.
+
+### Estructura Estándar de directorios
+
+![Untitled](resources/Untitled%2059.png)
+
+Algunos directorios:
+
+- **bin**: almacena los archivos binarios de ejecución del sistema.
+- **dev**: se mapea los dispositivos conectados.
+- **etc**: archivos de configuración.
+- **home**: es el hogar dentro del disco duro.
+- **hdfs**: se usa para almacenamiento distribuido.
+
+```bash
+# Ver el árbol de directorio hasta un nivel de 1
+tree -d -L 1 /
+```
