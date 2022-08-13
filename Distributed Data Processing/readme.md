@@ -59,6 +59,8 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
     - [**Preguntas Importantes**](#preguntas-importantes-2)
     - [Notas](#notas-1)
     - [Verificar instalación de herramientas](#verificar-instalación-de-herramientas)
+    - [Tipos de Licencia de Software](#tipos-de-licencia-de-software)
+      - [Las licencias más comunes](#las-licencias-más-comunes)
 
 ## Introducción al Big Data
 
@@ -564,3 +566,11 @@ Por ejemplo:
 ### Verificar instalación de herramientas
 
 ![Untitled](resources/Untitled%2054.png)
+
+### Tipos de Licencia de Software
+
+![Untitled](resources/Untitled%2055.png)
+
+#### Las licencias más comunes
+
+![Untitled](resources/Untitled%2056.png)
