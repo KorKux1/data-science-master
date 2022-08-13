@@ -63,6 +63,7 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
       - [Las licencias más comunes](#las-licencias-más-comunes)
     - [Funciones de un sistema operativo](#funciones-de-un-sistema-operativo)
     - [¿Cómo el SO administra los recursos del Hardware?](#cómo-el-so-administra-los-recursos-del-hardware)
+    - [Usuarios y Grupos](#usuarios-y-grupos)
 
 ## Introducción al Big Data
 
@@ -600,3 +601,22 @@ Por ejemplo:
 - Es importante monitorizar los recursos durante el entrenamiento de los modelos, por ejemplo: si vemos que la consumo de nuestra ram, procesador o otro recurso está muy alto esto impactará en los tiempos de entrenamiento.
   - Esto también nos puede indicar si el modelo consume muchos recursos o por el contrario tiene un problema que hace que consuma mucho más recursos del que debería.
 - El consumo de recursos nos da información que debemos analizar durante la construcción de nuestros modelos.
+
+### Usuarios y Grupos
+
+- Los grupos sirven para categorizar y organizar los usuarios.
+  - Se puede aplicar permisos a grupos que son heredados por los usuarios que formen parte de estos grupos.
+  - Hay grupos de usuarios y de sistema
+  - Algunos comandos:
+  
+    ```bash
+    # Ver usuarios logueados
+    w
+    
+    # Ver los procesos que está corriendo filtrando por una palabra (en este caso evol)
+    ps aux | grep evol
+    
+    # Ver los procesos que más recursos consume
+    # También se puede ver las prioridades.
+    top
+    ```
