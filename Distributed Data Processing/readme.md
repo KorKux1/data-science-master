@@ -53,6 +53,8 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
       - [Pros](#pros)
     - [Como construir un Data Lake](#como-construir-un-data-lake)
     - [📌 RESUMEN](#-resumen-1)
+  - [Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red](#del-pc-al-datalake-operación-básica-de-gnulinux-y-configuración-de-red)
+    - [Para Recordar](#para-recordar-2)
 
 ## Introducción al Big Data
 
@@ -513,3 +515,32 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 - Los DAS son ideales para organizaciones que se van a introducir al mundo de los datos.
 - Hay que encontrar un balance entre on premise y la nube.
 - Los clusters se construyen a partir componentes físicos y lógicos.
+
+## Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red
+
+### Para Recordar
+
+- Los DAS, NAS y SAN son unidades para almacenamiento.
+- Cuando los datos no tienen una estructura se dice datos no estructurados, no está correcto decir datos sin estructurar.
+  - Al decir sin estructurar hace parecer que hay que estructurar los datos.
+- El diseño del data lake se hace pensando para el futuro.
+  - Se debe tener en cuenta los proyectos que se están trabajando ahora y en los que se trabajará en el futuro.
+  - Es importante pensar que tipo de contrato se realizará (Compra, renta, etc).
+  - Debe pensarse en la escalabilidad.
+- Existen componentes físicos y lógicos para construir el cluster.
+- La infraestructura computacional significativa se compone de tres cosas importantes:
+  - Procesamiento.
+  - Almacenamiento.
+  - Interconexión y red.
+- Tener una buena infraestructura nos ayuda a tener una tolerancia a fallas.
+- Es importante tener archivos firmados y verificar la firma de los mismos a la hora de descargarlos.
+- Hay que comprobar la integridad desde el punto de vista de la seguridad
+Por ejemplo:
+
+    ```bash
+    # Verificamos que el archivo este correctamente firmado a partir de un *-shasum.txt
+    shasum -c stops-shasum.txt
+    stops.csv: OK
+    ```
+
+- Si no se cuenta con una conexión a internet estable o los datos son muy grandes se puede partir el archivo en varias partes y luego volverlos a unir.
