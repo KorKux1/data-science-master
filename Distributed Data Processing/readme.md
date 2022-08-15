@@ -53,6 +53,30 @@ Profesor: [Gabriel Tamura](https://www.icesi.edu.co/profesores/cv/gabriel-tamura
       - [Pros](#pros)
     - [Como construir un Data Lake](#como-construir-un-data-lake)
     - [📌 RESUMEN](#-resumen-1)
+  - [Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red](#del-pc-al-datalake-operación-básica-de-gnulinux-y-configuración-de-red)
+    - [Para Recordar](#para-recordar-2)
+    - [**Palabras Claves**](#palabras-claves-2)
+    - [**Preguntas Importantes**](#preguntas-importantes-2)
+    - [Notas](#notas-1)
+    - [Verificar instalación de herramientas](#verificar-instalación-de-herramientas)
+    - [Tipos de Licencia de Software](#tipos-de-licencia-de-software)
+      - [Las licencias más comunes](#las-licencias-más-comunes)
+    - [Funciones de un sistema operativo](#funciones-de-un-sistema-operativo)
+    - [¿Cómo el SO administra los recursos del Hardware?](#cómo-el-so-administra-los-recursos-del-hardware)
+    - [Usuarios y Grupos](#usuarios-y-grupos)
+    - [Filesystem](#filesystem)
+    - [Estructura Estándar de directorios](#estructura-estándar-de-directorios)
+    - [File Manager](#file-manager)
+    - [Configuración física de red](#configuración-física-de-red)
+    - [Configuración Lógica de Red](#configuración-lógica-de-red)
+    - [Manejo de archivos con la terminal](#manejo-de-archivos-con-la-terminal)
+    - [Comandos útiles](#comandos-útiles)
+    - [Manejo de archivos grandes](#manejo-de-archivos-grandes)
+    - [Reconstruyendo archivos que fueron separados](#reconstruyendo-archivos-que-fueron-separados)
+    - [Para poner en practica](#para-poner-en-practica)
+    - [Entender del negocio a traves de sus datos](#entender-del-negocio-a-traves-de-sus-datos)
+      - [Ejercicio](#ejercicio)
+    - [RESUMEN](#resumen)
 
 ## Introducción al Big Data
 
@@ -513,3 +537,218 @@ Estos retos nos llevan a preguntarnos si es mejor ¿Comprar, Leasing o Rentar?
 - Los DAS son ideales para organizaciones que se van a introducir al mundo de los datos.
 - Hay que encontrar un balance entre on premise y la nube.
 - Los clusters se construyen a partir componentes físicos y lógicos.
+
+## Del PC al DataLake: Operación básica de GNU/Linux y Configuración de Red
+
+### Para Recordar
+
+- Los DAS, NAS y SAN son unidades para almacenamiento.
+- Cuando los datos no tienen una estructura se dice datos no estructurados, no está correcto decir datos sin estructurar.
+  - Al decir sin estructurar hace parecer que hay que estructurar los datos.
+- El diseño del data lake se hace pensando para el futuro.
+  - Se debe tener en cuenta los proyectos que se están trabajando ahora y en los que se trabajará en el futuro.
+  - Es importante pensar que tipo de contrato se realizará (Compra, renta, etc).
+  - Debe pensarse en la escalabilidad.
+- Existen componentes físicos y lógicos para construir el cluster.
+- La infraestructura computacional significativa se compone de tres cosas importantes:
+  - Procesamiento.
+  - Almacenamiento.
+  - Interconexión y red.
+- Tener una buena infraestructura nos ayuda a tener una tolerancia a fallas.
+- Es importante tener archivos firmados y verificar la firma de los mismos a la hora de descargarlos.
+- Hay que comprobar la integridad desde el punto de vista de la seguridad
+Por ejemplo:
+
+    ```bash
+    # Verificamos que el archivo este correctamente firmado a partir de un *-shasum.txt
+    shasum -c stops-shasum.txt
+    stops.csv: OK
+    ```
+
+- Si no se cuenta con una conexión a internet estable o los datos son muy grandes se puede partir el archivo en varias partes y luego volverlos a unir.
+
+### **Palabras Claves**
+
+### **Preguntas Importantes**
+
+### Notas
+
+- El computador es la herramienta básica de los científicos de datos.
+- Hay 3 formas para usar el PC para manipular datos.
+  - De forma Individual
+  - Individual-virtualizada: primero se desarrolla parte de la tarea y luego se escala al cluster.
+  - Parte de un cluster.
+
+### Verificar instalación de herramientas
+
+![Untitled](resources/Untitled%2054.png)
+
+### Tipos de Licencia de Software
+
+![Untitled](resources/Untitled%2055.png)
+
+#### Las licencias más comunes
+
+![Untitled](resources/Untitled%2056.png)
+
+### Funciones de un sistema operativo
+
+- El sistema operativo es el administrador de los recursos del Hardware.
+- El científico de datos debe cuidar los recursos.
+  - El consumo de recursos ayuda a saber si un modelo es muy voraz o si tiene problemas de rendimiento.
+
+![Untitled](resources/Untitled%2057.png)
+
+### ¿Cómo el SO administra los recursos del Hardware?
+
+- Los recursos se deben administrar.
+  - La administración de recursos impacta en el rendimiento de los modelos.
+- Los SO son.
+  - Multi usuario.
+    - Se comparte los recursos entre otros usuarios.
+  - Multi Procesamiento.
+  - Cada programa se ejecuta de forma concurrente.
+
+![Untitled](resources/Untitled%2058.png)
+
+- Es importante monitorizar los recursos durante el entrenamiento de los modelos, por ejemplo: si vemos que la consumo de nuestra ram, procesador o otro recurso está muy alto esto impactará en los tiempos de entrenamiento.
+  - Esto también nos puede indicar si el modelo consume muchos recursos o por el contrario tiene un problema que hace que consuma mucho más recursos del que debería.
+- El consumo de recursos nos da información que debemos analizar durante la construcción de nuestros modelos.
+
+### Usuarios y Grupos
+
+- Los grupos sirven para categorizar y organizar los usuarios.
+  - Se puede aplicar permisos a grupos que son heredados por los usuarios que formen parte de estos grupos.
+  - Hay grupos de usuarios y de sistema
+  - Algunos comandos:
+  
+    ```bash
+    # Ver usuarios logueados
+    w
+    
+    # Ver los procesos que está corriendo filtrando por una palabra (en este caso evol)
+    ps aux | grep evol
+    
+    # Ver los procesos que más recursos consume
+    # También se puede ver las prioridades.
+    top
+    ```
+
+### Filesystem
+
+- Es una estructura lógica utilizada para almacenar archivos en una partición.
+- Los datos se guardan en el filesystem.
+- Define la forma de almacenar, organizar y recuperar todos los archivos del equipo, para hacer todas las operaciones sobre los datos eficientemente.
+- Partición: es una estructura físico-lógica en que se divide el espacio de almacenamiento de un disco duro.
+
+### Estructura Estándar de directorios
+
+![Untitled](resources/Untitled%2059.png)
+
+Algunos directorios:
+
+- **bin**: almacena los archivos binarios de ejecución del sistema.
+- **dev**: se mapea los dispositivos conectados.
+- **etc**: archivos de configuración.
+- **home**: es el hogar dentro del disco duro.
+- **hdfs**: se usa para almacenamiento distribuido.
+
+```bash
+# Ver el árbol de directorio hasta un nivel de 1
+tree -d -L 1 /
+```
+
+### File Manager
+
+- Permite navegar por el sistema de archivos.
+
+![Untitled](resources/Untitled%2060.png)
+
+### Configuración física de red
+
+- Los computadores se pueden conectar:
+  - Inalámbricamente.
+    - Más lento y menos confiable
+  - Por cable
+    - Mayor rapidez y más confiabilidad.
+
+![Configuración de Red del LIASON](resources/Untitled%2061.png)
+
+### Configuración Lógica de Red
+
+- Para funcionar en cluster, además de conectar el cable de red al socket respectivo, se debe verificar la configuración lógica (en el sistema operativo del computador). En la ventana de configuración de red.
+
+![Ejemplo configuración lógica de red](resources/Untitled%2062.png)
+
+- Los data lake como recomendación debe tener doble infraestructura de red:
+  - Una con salida a internet
+  - Otra no debe tener salida a internet, solo debe conectar los computadores que conforman el cluster.
+- Aunque físicamente todos los componentes de un data lake estén en un rack, lógicamente se puede construir varios clusters a partir de esa infraestructura.
+- El archivo /etc/hosts especifica todas las máquinas de los laboratorios.
+
+### Manejo de archivos con la terminal
+
+![Untitled](resources/Untitled%2063.png)
+
+### Comandos útiles
+
+![Untitled](resources/Untitled%2064.png)
+
+### Manejo de archivos grandes
+
+- Transferir archivos grandes por internet es costoso por el ancho de banda.
+- Se puede comprimir los archivos grandes.
+- Se puede usar split para partir los datos.
+- Es importante comprobar la integridad de los archivos.
+- Un ejemplo de como podemos hacer más fácil la transferencia de archivos:
+  
+![Untitled](resources/Untitled%2065.png)
+
+```bash
+# Consultar el tamaño de un directorio
+du -sh CQS-VM-5.4.2-0-virtualbox-ORIG/
+# Output: 11G     CQS-VM-5.4.2-0-virtualbox-ORIG
+```
+
+```bash
+# Comprimir un directorio
+zip -r cloudera-quickstart-vm-5.4.2-0-virtualbox-GTM-configured.zip CQS-VM-5.4.2-0-virtualbox-ORIG
+# Output: 
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/ (stored 0%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/cloudera-quickstart-vm-5.4.2-0-virtualbox-disk1.vdi (deflated 46%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/CQS-VM-5.4.2-0-virtualbox-ORIG.vbox(deflated 74%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/CQS-VM-5.4.2-0-virtualbox-ORIG.vbox-prev (deflated 74%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/Logs/ (stored 0%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/Logs/VBox.log (deflated 80%)
+# adding: CQS-VM-5.4.2-0-virtualbox-ORIG/Logs/VBox.log.1 (deflated 81%)
+```
+
+```bash
+# Descargar con wget con reconexión automática en caso de caídas del internet
+wget -c --retry-connrefused --tries=0 --timeout=5 <url>
+```
+
+### Reconstruyendo archivos que fueron separados
+
+![Untitled](resources/Untitled%2066.png)
+
+### Para poner en practica
+
+
+![Untitled](resources/Untitled%2067.png)
+
+### Entender del negocio a traves de sus datos
+
+- Los científicos de datos ayudan a las personas que toman decisiones a hacer cambio de paradigma de tomar la decisiones a partir de la intuición a hacerlo a partir de los datos, teniendo conversaciones con los datos.
+
+#### Ejercicio
+
+![Untitled](resources/Untitled%2068.png)
+
+### RESUMEN
+
+- El computador es la herramienta básica para el científico de datos, que puede ser usada de forma individual, individual-virtualizada o como parte de un cluster.
+- Es importante monitorizar el consumo de los recursos cuando se trabaja con modelos de datos.
+- El conocimiento sobre la terminal y el sistema operativo permite ser más eficientes a la hora de procesar los datos.
+- El científico de datos tiene conversaciones  a partir de los datos.
+- A la hora de trabajar con grandes volúmenes de datos hay que tener en cuenta el almacenamiento y la red, previendo errores en los mismos.
