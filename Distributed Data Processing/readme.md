@@ -746,3 +746,9 @@ wget -c --retry-connrefused --tries=0 --timeout=5 <url>
 ![Untitled](resources/Untitled%2068.png)
 
 ### RESUMEN
+
+- El computador es la herramienta básica para el científico de datos, que puede ser usada de forma individual, individual-virtualizada o como parte de un cluster.
+- Es importante monitorizar el consumo de los recursos cuando se trabaja con modelos de datos.
+- El conocimiento sobre la terminal y el sistema operativo permite ser más eficientes a la hora de procesar los datos.
+- El científico de datos tiene conversaciones  a partir de los datos.
+- A la hora de trabajar con grandes volúmenes de datos hay que tener en cuenta el almacenamiento y la red, previendo errores en los mismos.
