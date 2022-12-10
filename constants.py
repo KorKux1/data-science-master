@@ -3,7 +3,7 @@ def load_config():
         'img_size': 28,
         'train_images_dir': 'datasets/images/train/',
         'batch_size': 32,
-        'learning_rate': 0.001,
+        'learning_rate': 1e-3,
         'num_epochs': 200,
         'num_classes': 10,
         'weight_decay': 1e-5,
